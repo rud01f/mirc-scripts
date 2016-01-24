@@ -43,7 +43,7 @@ alias ccom {
     var %nipad = $left($chr(123) $+ %ni $+ $chr(125) $+ $str($chr(160),15), 17) 
     if ((%cn) && ($me != %ni)) { aline @ccom %nipad also on: %cn }
     inc %i 
-  }
+  } 
   aline @ccom end of %chan report
   aline @ccom -
 }
