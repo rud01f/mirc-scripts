@@ -36,7 +36,7 @@ on *:PARSELINE:out:*: {
 
   var %penalty = $calc(1 + %i // 100)
 
-  if (%cmd == KICK) {
+  if (%cmd == KICK) { 
     var %chans = $gettok(%msg, 1, 32)
     var %targets = $gettok(%msg, 2, 32)
     inc %penalty
