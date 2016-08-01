@@ -72,7 +72,7 @@ on *:PARSELINE:out:*: {
     var %topic = $gettok(%msg, 2-, 32)
     if (%topic) {
       inc %penalty 2
-      %penalty = $calc(%penalty + 2 * $numtok(%chan, 44)  
+      %penalty = $calc(%penalty + 2 * $numtok(%chan, 44)) 
     }
   }
   elseif ((%cmd == PRIVMSG) || (%cmd == NOTICE)) {
